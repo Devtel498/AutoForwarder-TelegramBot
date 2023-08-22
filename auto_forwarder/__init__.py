@@ -15,7 +15,7 @@ LOGGER = logging.getLogger(__name__)
 ENV = bool(os.environ.get('ENV', False))
 
 if ENV:
-    API_KEY = os.environ.get('API_KEY', None)
+    API_KEY = os.environ.get('API_KEY', '26000820' None)
     try:
         OWNER_ID = int(os.environ.get('OWNER_ID', None))
     except ValueError:
